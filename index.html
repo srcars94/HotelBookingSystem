@@ -7,20 +7,20 @@
 		<form id="mainForm">
 			<h4>Select the number of people staying in the room</h4>
 			<select name="roomSize" size="4">
-				<option value="fourPeople" selected="selected">Four People</option>
-				<option value="threePeople">Three People</option>
-				<option value="twoPeople">Two People</option>
-				<option value="onePeople">One Person</option>
+				<option value="4" selected="selected">Four People</option>
+				<option value="3">Three People </option>
+				<option value="2">Two People</option>
+				<option value="1">One Person</option>
 			</select>
 		</form>
 		
 		<script>
-			var four = 4;
-			var three = 3;
-			var two = 2;
-			var one = 1;
+			var perPerson = 10;
 			
+			var e = document.getElementById("mainForm");
+			var selection = e.options[e.selectedIndex].value;
 			
+			document.write("helo");
 		</script>
 	</body>
 </html>
