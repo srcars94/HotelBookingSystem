@@ -24,7 +24,9 @@
 					document.getElementById("choice").innerHTML = "Select an option from the drop down list";
 				}else{
 					var x = document.getElementById("choice").innerHTML = e*20;
-					document.getElementById("choice").innerHTML = "Your cost PPPN inc. VAT: £" + ((x * 0.2) + x);				
+					var total = ((x * 0.2) + x);
+					var q = document.getElementById("choice").innerHTML = "Your cost PPPN inc. VAT: £" + total;	
+					localStorage.setItem('price', total);
 				}
 				
 				//storing users choice on the browser

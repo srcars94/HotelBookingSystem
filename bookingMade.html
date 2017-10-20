@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Confirmation</title>
+	</head>
+	<body>
+		<p id="out"></p>
+	</body>
+	
+	<script>
+			//Getting value from index.html drop down choice
+			var a = localStorage.getItem('userRoomChoice');
+			var b = localStorage.getItem('price');
+			document.getElementById("out").innerHTML = "Thank you for booking " + a + " people into our hotel for £" + b;
+	</script>
+</html>

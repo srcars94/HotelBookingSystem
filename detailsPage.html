@@ -5,11 +5,16 @@
 	</head>
 	<body>
 		<h4>Enter your deatils</h4>
+		<p>Name: <input type="text" name="personName" /></p>
+		<p>First line of Address: <input type="text" name="personFirstLine" /></p>
+		<p>Town: <input type="text" name="personTown" /></p>
+		<p>Post code: <input type="text" name="personPostCode" /></p>
+		<p>Card Number: <input type="text" name="personCardNo" size="16" maxlength="16"/></p>
+		<p>Account Number: <input type="text" name="personAccNo" size="6" maxlength="6"/></p>
+		<p>Sort code: <input type="text" name="personStCd1" size="2" maxlength="2"/><input type="text" name="personStCd1" size="2" maxlength="2"/><input type="text" name="personStCd1" size="2" maxlength="2"/></p>
+		<p>Security code: <input type="text" name="personStCd1" size="3" maxlength="3"/>
 		
-		<script>
-			//Getting value from index.html drop down choice
-			var a = localStorage.getItem('userRoomChoice');
-			document.write(a);
-		</script>
+		<p><input type="button" value="Book room" onclick="location.href='bookingMade.html'"></p>
+		
 	</body>
 </html>
