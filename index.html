@@ -14,9 +14,10 @@
 			</select>
 			
 			<p id="choice"></p>
+			
+			<input type="button" name="nextBtn" value="Move to next page" onclick="location.href='detailsPage.html'">
 		
 		<script>
-			
 			function dropDownValues(){
 				var e = document.getElementById("roomSize").value;
 				if(e == "select"){
@@ -25,6 +26,9 @@
 					var x = document.getElementById("choice").innerHTML = e*20;
 					document.getElementById("choice").innerHTML = "Your cost PPPN inc. VAT: £" + ((x * 0.2) + x);				
 				}
+				
+				//storing users choice on the browser
+				localStorage.setItem('userRoomChoice', e);
 			}
 		</script>
 	</body>
