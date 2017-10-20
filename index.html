@@ -4,23 +4,27 @@
 		<link rel="stylesheet" type="text/css" href="indexStyle.css">
 	</head>
 	<body>
-		<form id="mainForm">
 			<h4>Select the number of people staying in the room</h4>
-			<select name="roomSize" size="4">
-				<option value="4" selected="selected">Four People</option>
+			<select id="roomSize" onchange="dropDownValues(this)">
+				<option value="select">Select Option</option>
+				<option value="4">Four People</option>
 				<option value="3">Three People </option>
 				<option value="2">Two People</option>
 				<option value="1">One Person</option>
 			</select>
-		</form>
+			
+			<p id="choice"></p>
 		
 		<script>
-			var perPerson = 10;
 			
-			var e = document.getElementById("mainForm");
-			var selection = e.options[e.selectedIndex].value;
-			
-			document.write("helo");
+			function dropDownValues(){
+				var e = document.getElementById("roomSize").value;
+				if(e == "select"){
+					document.getElementById("choice").innerHTML = "Select an option from the drop down list";
+				}else{
+					document.getElementById("choice").innerHTML = "Your cost PPPN: £" + (e*20);				
+				}
+			}
 		</script>
 	</body>
 </html>
