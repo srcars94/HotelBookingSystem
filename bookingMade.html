@@ -11,6 +11,7 @@
 			//Getting value from index.html drop down choice
 			var a = localStorage.getItem('userRoomChoice');
 			var b = localStorage.getItem('price');
-			document.getElementById("out").innerHTML = "Thank you for booking " + a + " people into our hotel for £" + b;
+			var c = localStorage.getItem('firstNameStore');
+			document.getElementById("out").innerHTML = "Thank you for booking " + a + " people into our hotel for £" + b + " " + c;
 	</script>
 </html>
